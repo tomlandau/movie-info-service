@@ -2,7 +2,7 @@ const requestify = require('requestify');
 const baseUrl = require('../config/user-service');
 
 /**
- * Middleware for handling user authentication based on the `cocyclesSession` cookie
+ * Middleware for handling user authentication based on a cookie
  */
 module.exports = (cookieName, options) => (req, res, next) => {
   /**
